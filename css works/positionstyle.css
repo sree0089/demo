@@ -1,16 +1,73 @@
 .row{
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 150px;
     border: 1px solid black;
     background-color: chartreuse;
     position: relative;
-} 
+    left:30%;
+    margin-top:2% ;
+}
 .col{
-    position:fixed;
-    top:40px;
-    width: 200px;
-    left: 80%;
-    height: 200px;
-    border: 1px solid black;
-    background-color: blueviolet;
+    width:100px;
+    height: 100px;
+    border: 1px solid white;
+
+}
+.col-1{
+    position: absolute;
+    background-color: teal;
+    color: lemonchiffon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 6;
+}
+.col-2{
+    color: lemonchiffon;
+    position: absolute;
+    background-color: indigo;
+    left:105px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 6;
+}
+.col-3{
+    position: absolute;
+    background-color: coral;
+    left: 210px;
+    color: lemonchiffon;
+    font-family: monospace;
+    text-align: center;
+    line-height:6;
+}
+.col-4{
+    position: absolute;
+    background-color: darkcyan;
+    left: 315px;
+    color: lemonchiffon;
+    font-family: serif;
+    text-align: center;
+    line-height: 6;
+}
+.col-5{
+    position: absolute;
+    background-color: hotpink;
+    left: 420px;
+    color: lemonchiffon;
+    font-family: fantasy;
+    text-align: center;
+    line-height: 6;
+}
+.pos{
+    position: absolute;
+    top: 30%;
+
+}
+.fxd{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* position: fixed; */
+    /* top: 35%; */
+    position: sticky;
+    top:2%;
 }
