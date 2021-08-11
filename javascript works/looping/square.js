@@ -1,8 +1,11 @@
-var num=2,l=8,u=28;
-sqr=num*num;
-cub=num*num*num;
-while(sqr>l&&sqr<u)
+var num=3,l=8,u=28;
+var i=1
+while(i<=u)
 {
-    console.log(sqr);
-    num=num+1;
+    let res=i**num
+    if(res>l&res<u)
+    {
+        console.log(i)
+    }
+    i++;
 }
