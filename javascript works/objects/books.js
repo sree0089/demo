@@ -8,9 +8,9 @@ class BookLibrary{
     }        
     findBook(book_name)
      {
-        if (book_name in this.BookLibrary) 
+        if (book_name in this.books)
         {
-            console.log("Book Found");
+            console.log(this.books[book_name]);
         }
         else {
             console.log("Book Is not in the library");
@@ -18,11 +18,12 @@ class BookLibrary{
     }
      orderBySold()
      {
-     
+     Object.entries(this.books).sort((book1,book2)=>(book1[1].sold_copies-book2[1].sold_copies)).forEach(data=>console.log(data));
 
      }
 }
 
  var book1=new BookLibrary;
- book1.findBook("randamoozham")
+ //book1.findBook("randamoozham")
+ book1.orderBySold();
  //book1.orderBySold()

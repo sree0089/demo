@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Welcome to Our Services</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br>
+                <br>
+                <button class="btn btn-primary" onclick="createAccount()">Craete a New Account</button>
+
+            </div>
+            <div class="col"> </div>
+            <div class="col"> </div>
+
+
+
+
+        </div>
+      
+
+
+    </div>
+</body>
+<script>
+createAccount()
+{
+
+}
+class Bank
+{
+    accountCreate(accno,acctype,bal)
+    {
+        this.accno=accno;
+        this.acctype=acctype;
+        this.bal=bal;
+    }
+    deposit(amount)
+    {
+        this.bal+=amount;
+        console.log(`Your Account Number ${this.accno}has been credited with ${amount} avail bal${this.bal}`);
+    }
+
+    withdrawal(amount)
+    {
+        if(this.bal>amount){
+            this.bal-=amount;
+        }
+        else{
+            console.log("Insufficient Balance");
+        }
+
+    }
+    balEnquiry()
+    {
+      console.log(`your available balance is ${this.bal}`);
+    }
+}
+</script>
+</html>
